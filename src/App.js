@@ -5,6 +5,8 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './views/Home';
 import About from './views/About';
+import Destroy from './views/Destroy';
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,7 @@ function App() {
             <Route path="/" exact component={Home}/>
             <Route path="/home" exact component={Home}/>
             <Route path="/about" exact component={About}/>
+            <Route path="/destroy" exact component={Destroy}/>
           </Switch>
         <Footer />
       </Router>
