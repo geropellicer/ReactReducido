@@ -151,3 +151,56 @@ h1,h2,h3,h4,h5, h6 {
 .footer > * {
   margin: 0 36px;
 }
+
+button {
+  background: #000;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 100%;
+  width: 48%;
+  max-width: 400px;
+  min-width: 100px;
+  padding: 12px 24px;
+  margin: 0;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.topMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.topMenu a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMenu > li:last-child {
+  background-color: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMenu > li:last-child button{
+margin: 0;
+}
+
+.sumForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sumForm > button:first-child{
+  margin-right: 2%;
+}
+.sumForm > button:last-child{
+  margin-left: 2%;
+}

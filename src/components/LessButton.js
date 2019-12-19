@@ -1,10 +1,12 @@
 import React from "react";
+import {useDispatch} from 'react-redux';
+import {decrement} from '../actions';
 
 const LessButton = () => {
+  const dispatch = useDispatch();
+
   return (
-    <div className="component-container">
-      <h1>Less button Works!</h1>
-    </div>
+      <button onClick={() => dispatch(decrement())}>- button!</button>
   );
 };
 

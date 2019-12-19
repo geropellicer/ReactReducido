@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import InfoDisplay from "./InfoDisplay";
+import LoginForm from "./LoginForm";
 
 const Nav = () => {
   return (
@@ -10,7 +11,7 @@ const Nav = () => {
           <h1>Nav Works!</h1>
         </div>
         <div className="center">
-          <InfoDisplay/>
+          <InfoDisplay />
         </div>
         <div className="right">
           <ul className="topMenu">
@@ -23,6 +24,9 @@ const Nav = () => {
             <Link to="/destroy">
               <li>Destroy this page</li>
             </Link>
+            <li>
+              <LoginForm />
+            </li>
           </ul>
         </div>
       </div>

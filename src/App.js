@@ -7,6 +7,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Destroy from './views/Destroy';
 
+
 function App() {
   return (
     <div className="App">

@@ -1,9 +1,12 @@
 import React from "react";
+import PlusButton from "./PlusButton";
+import LessButton from "./LessButton";
 
 const SumForm = () => {
   return (
-    <div className="component-container">
-      <h1>Sum form Works!</h1>
+    <div className="component-container sumForm">
+      <PlusButton/>
+      <LessButton/>
     </div>
   );
 };

@@ -1,10 +1,15 @@
 import React from "react";
+import {increment} from '../actions';
+import {useDispatch} from 'react-redux';
+
+
 
 const PlusButton = () => {
+
+  const dispatch = useDispatch();
+
   return (
-    <div className="component-container">
-      <h1>Pluss button Works!</h1>
-    </div>
+      <button onClick={() => dispatch(increment())}>+ button!</button>
   );
 };
 

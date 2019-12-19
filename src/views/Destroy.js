@@ -4,7 +4,6 @@ const Destroy = () => {
   const [timer, setTimer] = useState(10);
 
   const countDown = () => {
-    console.log("countdow");
   };
 
   const inter = setInterval(() => {
@@ -12,12 +11,14 @@ const Destroy = () => {
   }, 1000);
 
   const less = () => {
-    console.log("less");
     if (timer > 0) {
       setTimer(timer - 1);
     } else {
       document.querySelector("html").remove();
-      clearInterval(less());
+      setTimeout( () => {
+        // eslint-disable-next-line
+        window.location.href = window.location.href;
+      }, 4000);
     }
     clearInterval(inter);
   };
