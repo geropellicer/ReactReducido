@@ -107,6 +107,16 @@
   padding: 18px;
   background: #fff;
   border: 1px solid #cc2222;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 5px;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4);
+}
+
+.nav a{
+  text-decoration: none;
+  color: #cc3333;
+  font-weight: bold;
 }
 
 h1,h2,h3,h4,h5, h6 {
